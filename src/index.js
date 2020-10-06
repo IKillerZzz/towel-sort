@@ -1,6 +1,2 @@
 
-// You should implement your task here.
-
-module.exports = function towelSort (matrix) {
-  return [];
-}
+module.exports = towelSort = matrix => matrix ? matrix.flatMap((el, i) => i % 2 === 0 ? el : el.reverse()) : [];
